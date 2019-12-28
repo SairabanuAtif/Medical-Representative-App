@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/screen_background"
+    >
+
+   <!-- <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/colorWhite"
+        android:textStyle="bold" />
+-->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:padding="@dimen/activity_horizontal_margin">
+
+    <Spinner
+        android:id="@+id/spinner_meeting_doctors"
+        style="@style/MarginTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spinner_height"
+        android:background="@drawable/border_spinner"
+        android:hint="Select Description"
+        android:textColor="@color/colorPrimaryDark"
+
+        ></Spinner>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/relativeLayout2">
+
+        <!-- <LinearLayout
+             android:id="@+id/layloadingH"
+             android:layout_height="wrap_content"
+             android:layout_weight="0.20"
+             android:layout_width="fill_parent"
+             android:gravity="center"
+             >
+             <ProgressBar
+                 android:layout_width="wrap_content"
+                 android:id="@+id/progressBar1"
+                 android:layout_height="wrap_content"
+                 android:layout_above="@+id/text_clockin"
+                 >
+             </ProgressBar>
+         </LinearLayout>-->
+
+
+        <TextView
+            android:id="@+id/text_meeting_visit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style"
+            android:gravity="center"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="Visit"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+
+            android:layout_margin="@dimen/activity_horizontal_margin"
+
+            />
+        <TextView
+            android:id="@+id/text_Lat"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Clock In"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            />
+        <TextView
+            android:id="@+id/text_Long"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Clock In"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            />
+        <TextView
+            android:id="@+id/text_Location"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Clock In"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            />
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

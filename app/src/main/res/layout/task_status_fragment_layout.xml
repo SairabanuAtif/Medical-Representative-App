@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:background="@drawable/screen_background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Status"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/colorBlack"
+        />
+
+    <Spinner
+        android:id="@+id/spinner_status"
+        style="@style/MarginTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spinner_height"
+        android:background="@drawable/border_spinner"
+        android:hint="Select Description"
+        android:textColor="@color/colorPrimaryDark"
+        ></Spinner>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="5"
+        android:padding="@dimen/activity_horizontal_margin"
+
+        >
+        <TextView
+            android:layout_width="@dimen/text_view_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="@dimen/text_view_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/textRequestPostEdit"
+            android:layout_width="@dimen/text_view_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="@dimen/text_view_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/text_task_status_save"
+            android:layout_width="@dimen/text_view_width"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:padding="@dimen/text_search_padding"
+            android:layout_weight="1"
+            android:background="@drawable/button_style"
+            android:gravity="center" />
+
+
+    </LinearLayout>
+
+    <!--<RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="@dimen/activity_horizontal_margin">
+
+        <RadioButton
+            android:id="@+id/not_started"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Not Started"
+           />
+        <RadioButton
+            android:id="@+id/In_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="In Progress"/>
+        <RadioButton
+            android:id="@+id/completed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Completed"/>
+        <RadioButton
+            android:id="@+id/waiting_for_someone_else"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Waiting For Someone Else"/>
+    </RadioGroup>-->
+</LinearLayout>

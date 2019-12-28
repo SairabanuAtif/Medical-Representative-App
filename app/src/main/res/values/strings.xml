@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Medivision</string>
+    <string name="action_exit">Exit</string>
+    <string name="string_server_response">response</string>
+    <string name="Employeeid">User name</string>
+    <string name="Password">Password</string>
+
+    <string-array name="status">
+        Not Started
+        In Progress
+        Completed
+        Waiting On Someone Else
+    </string-array>
+</resources>

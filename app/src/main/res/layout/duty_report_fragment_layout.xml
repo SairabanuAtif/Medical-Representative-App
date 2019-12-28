@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+
+    tools:context="com.triocodes.medivision.Fragment.DutyReportFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <EditText
+                android:id="@+id/edittext_duty_report_from_date"
+                android:layout_width="@dimen/text_view_width"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:ellipsize="end"
+                android:hint="From"
+                android:textColorHint="@color/colorHint"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_weight="2" />
+            <EditText
+                android:id="@+id/edittext_duty_report_to_date"
+                android:layout_width="@dimen/text_view_width"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:ellipsize="end"
+                android:hint="To"
+                android:textColorHint="@color/colorHint"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_weight="2" />
+
+            <TextView
+                android:id="@+id/text_duty_report_search"
+                android:layout_width="@dimen/text_view_width"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:padding="@dimen/text_search_padding"
+                android:layout_weight="1"
+                android:background="@drawable/button_style"
+                android:gravity="center" />
+
+        </LinearLayout>
+        <ListView
+            android:id="@+id/listDutyReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/underline_weight">
+
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>
+
+

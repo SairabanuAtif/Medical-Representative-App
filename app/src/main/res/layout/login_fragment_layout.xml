@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        />
+
+    <!--  <EditText
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/edit_employee_code"
+          android:hint="User Id"
+          android:inputType="number"
+          android:layout_gravity="center"
+          android:textColor="@color/colorPrimaryDark"
+          android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+  </LinearLayout>
+  -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:padding="@dimen/activity_horizontal_margin">
+
+
+
+        <EditText
+            android:id="@+id/edit_employee_code"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_above="@+id/edit_password"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@drawable/rounded_edit_text"
+            android:drawablePadding="10dp"
+            android:hint="@string/Employeeid"
+            android:inputType="textCapSentences"
+            android:paddingLeft="@dimen/edit_text_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorHint"
+
+            />
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/edit_text_padding1"
+            android:background="@drawable/rounded_edit_text"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="@string/Password"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/edit_text_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorHint"
+
+            />
+
+
+        <TextView
+            android:id="@+id/text_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/edit_password"
+            android:layout_marginTop="@dimen/edit_text_padding"
+            android:background="@drawable/button_style"
+            android:gravity="center"
+            android:text="Log In"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
